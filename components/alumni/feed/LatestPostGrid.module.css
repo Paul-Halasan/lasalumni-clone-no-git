@@ -1,0 +1,19 @@
+.mymasonrygrid {
+  display: flex;
+  margin-left: -15px; /* Adjusted gutter size offset */
+  width: auto;
+
+}
+
+.mymasonrygridcolumn {
+  padding-left: 15px; /* Adjusted gutter size */
+  background-clip: padding-box;
+
+}
+
+.mymasonrygridcolumn > div {
+  margin-bottom: 15px; /* Space between the cards */
+  display: flex; /* Ensure proper flex display */
+  flex-direction: column;
+  border: 1px solid red; /* Add border for debugging */
+}

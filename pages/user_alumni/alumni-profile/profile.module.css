@@ -1,0 +1,34 @@
+/* profile.module.css */
+
+.contacts {
+  background-image: linear-gradient(180deg, #146a3e 0%, #48a774 100%);
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 20px;
+  min-width: 200px;
+}
+
+.skills {
+  background-image: linear-gradient(180deg, #146a3e 0%, #48a774 100%);
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+}

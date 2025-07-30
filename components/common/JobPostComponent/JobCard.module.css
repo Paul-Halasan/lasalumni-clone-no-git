@@ -1,0 +1,33 @@
+.jobCard {
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.jobCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border-color: #146a3e;
+}
+
+.jobCard:active {
+  transform: translateY(0px);
+  background-color: rgba(20, 106, 62, 0.05);
+}
+
+.favoriteButton {
+  transition: all 0.2s ease;
+}
+
+.favoriteButton:hover {
+  background-color: rgba(20, 106, 62, 0.1);
+  transform: scale(1.1);
+}
+
+.favoriteButton:active {
+  transform: scale(0.95);
+}
+
+.activeHeart {
+  fill: #146a3e;
+  color: #146a3e;
+}

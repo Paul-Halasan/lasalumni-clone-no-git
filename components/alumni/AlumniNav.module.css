@@ -1,0 +1,223 @@
+.navbar {
+  background-color: white;
+  height: 100vh;
+  width: rem(270px);
+  padding: var(--mantine-spacing-sm);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  border-right: 1px solid var(--mantine-color-gray-3);
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 100vh;
+    border-right: 0px;
+  }
+}
+
+.mainContentHidden {
+  overflow-y: hidden;
+  height: 100vh;
+}
+
+.header {
+  padding: var(--mantine-spacing-sm);
+  margin-left: calc(var(--mantine-spacing-md) * -1);
+  margin-right: calc(var(--mantine-spacing-md) * -1);
+  color: var(--mantine-color-black);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.shellHeader {
+  padding: var(--mantine-spacing-md);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  flex-shrink: 0;
+}
+
+.logo {
+  width: 180px;
+
+  @media (max-width: 768px) {
+    width: 150px;
+  }
+}
+
+.links {
+  flex: 1;
+  margin-left: calc(var(--mantine-spacing-md) * -0.4);
+  margin-right: calc(var(--mantine-spacing-md) * -0.4);
+}
+
+.linksInner {
+  padding-bottom: 120px;
+}
+
+.navLinkRoot {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--mantine-color-black);
+  cursor: pointer;
+  text-decoration: none;
+  color: dimgray;
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 8px;
+}
+
+.navLinkActive {
+  border-style: solid;
+  border-radius: 8px;
+  color: white;
+  font-weight: 700;
+  background-color: var(--mantine-color-green-9);
+
+  &:hover {
+    background-color: var(--mantine-color-green-9);
+  }
+}
+
+.navLinkRoot:hover {
+  background-color: var(--mantine-color-gray-1);
+  color: black;
+  border-radius: 8px;
+}
+
+.navLinkChild:hover {
+  background-color: var(--mantine-color-gray-1);
+  color: black;
+  border-radius: 0 8px 8px 0;
+}
+
+.borderleft {
+  border-left: 1px solid var(--mantine-color-gray-3);
+  border-radius: 0 8px 8px 0;
+}
+
+.footer {
+  width: 270px; /* Match the navbar width */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 60px;
+  border-right: 1px solid var(--mantine-color-gray-3);
+  border-top: 1px solid var(--mantine-color-gray-3);
+  flex-shrink: 0; /* Prevent shrinking */
+  bottom: 0;
+  position: fixed;
+  left: 0; /* Align to left edge */
+  z-index: 2; /* Ensure it sits above other content */
+  box-sizing: border-box;
+
+  @media (max-width: 768px) {
+    padding-bottom: 10px;
+    width: 270px; /* Keep consistent width on mobile */
+  }
+
+  @media (max-width: 425px) {
+    padding-bottom: 10px;
+    width: 100%; /* Keep consistent width on mobile */
+  }
+}
+
+.logoutButton {
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #ffffff;
+  color: #146a3e;
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: calc(100% - 20px); /* Account for padding */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: #146a3e;
+    border-color: #ffffff;
+    border-width: 2px;
+    color: #ffffff;
+  }
+}
+
+/* Notification menu responsive styles */
+.notificationMenu {
+  position: relative;
+
+  @media (max-width: 576px) {
+    position: static;
+  }
+}
+
+.notificationDropdown {
+  max-width: 95vw;
+
+  @media (max-width: 576px) {
+    position: fixed !important;
+    top: 60px !important;
+    right: 10px !important;
+    left: 10px !important;
+    width: auto !important;
+    max-height: calc(100vh - 80px) !important;
+    z-index: 1000 !important;
+  }
+}
+
+.notificationScrollArea {
+  height: 500px;
+
+  @media (max-width: 768px) {
+    height: 450px;
+  }
+
+  @media (max-width: 576px) {
+    height: 400px;
+  }
+
+  @media (max-height: 600px) {
+    max-height: calc(80vh - 120px);
+  }
+}
+
+.notificationItem {
+  padding: 0;
+  transition: all 0.2s ease;
+  margin-bottom: 4px;
+}
+
+.notificationContent {
+  padding: var(--mantine-spacing-md);
+}
+
+.notificationHeader {
+  padding: var(--mantine-spacing-md);
+  border-bottom: 1px solid var(--mantine-color-gray-2);
+}
+
+.notificationAvatar {
+  @media (max-width: 576px) {
+    min-width: 32px;
+  }
+}
+
+.notificationTitle {
+  font-size: var(--mantine-font-size-xl);
+
+  @media (max-width: 576px) {
+    font-size: var(--mantine-font-size-lg);
+  }
+}

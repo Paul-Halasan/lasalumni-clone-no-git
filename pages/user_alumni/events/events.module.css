@@ -1,0 +1,6 @@
+.content {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    color: var(--mantine-color-black);
+    padding-bottom: 40px;
+  }

@@ -1,0 +1,69 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  transition:
+    transform 150ms ease,
+    box-shadow 150ms ease;
+
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: var(--mantine-shadow-md);
+  }
+}
+
+.title {
+  font-family: 'Greycliff CF', var(--mantine-font-family);
+  font-weight: bold;
+}
+
+.imageSection {
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.freeEventBadge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+}
+
+.contentSection{
+  flex: 1 0 auto;
+}
+
+.buttonSection {
+  flex: 0 0 auto;
+  margin-top: auto;
+}
+
+.title {
+  font-family: 'Greycliff CF', var(--mantine-font-family);
+  font-weight: bold;
+}
+
+.finishedOverlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.5rem;
+font-weight: bold;
+z-index: 1;
+}
+
+.modalBottom{
+background-color: white;
+color:black;
+padding:0;
+
+
+}
+
+

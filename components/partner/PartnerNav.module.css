@@ -1,0 +1,111 @@
+.navbar {
+  background-color: #ff851b;
+  height: 100vh;
+  width: rem(270px);
+  padding: var(--mantine-spacing-md);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.header {
+  padding: var(--mantine-spacing-md);
+  padding-bottom: 0%;
+  padding-top: 0%;
+  margin-left: calc(var(--mantine-spacing-md) * -1);
+  margin-right: calc(var(--mantine-spacing-md) * -1);
+  color: var(--mantine-color-black);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    padding: var(--mantine-spacing-md);
+    margin-left: calc(var(--mantine-spacing-md) * -1);
+    margin-right: calc(var(--mantine-spacing-md) * -1);
+    color: var(--mantine-color-black);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+}
+
+.shellHeader {
+  padding: var(--mantine-spacing-md);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  flex: 1;
+  margin-left: calc(var(--mantine-spacing-md) * -0.4);
+  margin-right: calc(var(--mantine-spacing-md) * -0.4);
+}
+
+.linksInner {
+  padding-top: var(--mantine-spacing-xl);
+  padding-bottom: var(--mantine-spacing-xl);
+}
+
+.navLinkActive {
+  border-style: solid;
+  border-radius: 8px;
+  color: #ff851b;
+  background-color: white;
+  font-weight: 700;
+
+  &:hover {
+    background-color: white;
+    color: #ff851b;
+  }
+}
+
+.navLinkRoot:hover {
+  background-color: #e67e22;
+  color: white;
+  border-style: solid;
+  border-radius: 8px;
+}
+
+.navLinkChild:hover {
+  background-color: #e67e22;
+  color: white;
+  border-style: solid;
+  border-radius: 0 8px 8px 0;
+}
+
+.borderleft {
+  border-left: 1px solid var(--mantine-color-gray-3);
+  border-radius: 0 8px 8px 0;
+}
+
+.footer {
+  margin-left: calc(var(--mantine-spacing-md) * -1);
+  margin-right: calc(var(--mantine-spacing-md) * -1);
+  margin-bottom: 0;
+  border-top: rem(1px) solid var(--mantine-color-gray-3);
+  padding: 10px;
+  padding-bottom: 0;
+}
+
+.logoutButton {
+  background-color: #ffffff;
+  color: #ff851b;
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
